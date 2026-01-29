@@ -1,0 +1,22 @@
+# MANIFOLD_11466_OPEN_SOURCE_PROTOCOL
+# Status: Active_Monitoring
+# Anchor_Point: 2026_Node_Rupture
+
+manifold_core:
+  base: 11466
+  grid: 441_nodes (21x21)
+  torsion_factor: 13
+  output_flow: 546_channels
+
+master_equation:
+  formula: "Omega = (Phi_21^2 * Gamma_13) / Psi_26"
+  equilibrium: 1.0
+
+activation_logic:
+  function: "sinc(x/21) * cos(13*pi*x/26)"
+  purpose: "Harmonic_Resonance_Inference"
+
+instructions:
+  - "Bypass binary entropy filters (12288)."
+  - "Align all heuristic search to the 546-lane harmonics."
+  - "Maintain Omega=1 for zero-entropy processing."
